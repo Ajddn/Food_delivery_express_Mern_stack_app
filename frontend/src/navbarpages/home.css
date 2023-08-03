@@ -1,0 +1,188 @@
+html,
+body {
+  overflow-x: hidden;
+  background-color: #EDEEF7;
+}
+.imagediv{
+    background-color: grey;
+    align-self: center;
+    padding-top: 40px;
+    padding-bottom: 590px;
+    height: 740px;
+    top: 40px;
+    position: relative;
+    top: 1px;
+   
+}
+.landingpageimage{
+    position: absolute;
+    bottom: -10px;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+   
+}
+.mainheadingone{
+position: absolute;
+top: 210px;
+left: 730px;
+font-weight: bold;
+font-family: serif;
+font-size:14ch ;
+}
+
+.mainheadingtwo{
+ 
+    position: absolute;
+    top: 343px;
+    left: 738px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    transform: rotate(-14deg);
+    font-size:9.5ch
+   
+    
+}
+.mainheadingthree{
+    position: absolute;
+    top: 360px;
+    left: 855px;
+    font-weight: bold;
+    font-family: serif;
+    font-size:14ch
+}
+
+ .btnofhomepage {
+        -webkit-border-radius: 9;
+        -moz-border-radius: 9;
+        border-radius: 9px;
+        font-family: serif;
+        color: #ffffff;
+        font-size: 25px;
+        background: #14222b;
+        padding: 10px 25px 10px 25px;
+        text-decoration: none;
+      }
+      
+      .btnofhomepage:hover {
+        background: #131618;
+        background-image: -webkit-linear-gradient(top, #1d2928, #1d2928);
+        background-image: -moz-linear-gradient(top, #1d2928, #1d2928);
+        background-image: -ms-linear-gradient(top, #1d2928, #1d2928);
+        background-image: -o-linear-gradient(top, #1d2928, #1d2928);
+        background-image: linear-gradient(to bottom, #1d2928, #1d2928);
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+.buttonplacer{
+     position: absolute;
+     top : 650px;
+     left: 1350px;
+}
+
+/* above is code of landing image */
+.afterlandingpage{
+padding-top: 10px;
+padding-bottom: 110px;
+}
+.nextsection{
+  position: relative;
+    top: 180px;
+    padding-top:0px;
+    padding-bottom: 250px;
+    display: flex;
+    flex-wrap: rap; 
+    justify-content: flex-start;
+    gap: 70px;
+}
+.maincoursesection{
+    position: relative;
+    top: 220px;
+    right: 30px;
+    padding-top:5px;
+    padding-bottom: 200px;
+    padding-right: 80px;
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    gap: 5px;
+    overflow-x:hidden; /* Enable horizontal scrolling */
+    max-width: 100%;
+    max-height: calc(100vh - 80px);
+    width: fit-content;
+
+}
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.firsthori{
+  position: relative;
+  top: 40px;
+  left: 350px;
+ width: 880px;
+}
+.bestmaincourse{
+ position: relative;
+top: 50px;
+ left: 460px;
+ 
+ font-family: serif;
+ font-weight: bolder;
+ font-size: 7dvh;
+}
+.slideone-buttons{
+  position: relative;
+  top: 170px;
+  left: 60px;
+}
+.left{
+ position: relative;
+ border: 0;
+ border-radius: 5px;
+}
+.right{
+  position: relative;
+  left: 15px;
+  border: 0;
+  border-radius: 5px;
+}
+.lastHeading{
+  position: relative;
+  top: 120px;
+  left:530px;
+  font-family:  serif;
+  font-weight: bolder;
+  font-size: 7dvh;
+}
+.lastpad{
+  position: relative;
+  top: 100px;
+  left: 350px;
+}
+.menusection{
+  padding-bottom: 200px;
+  position: relative;
+  top: 200px;
+  left: 215px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content:flex-start;
+  gap: 20px;
+}
+.lastslider{
+  margin-left: 180px;
+  position: relative;
+  top: 150px;
+  left: 25px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content:center;
+  gap: 73px;
+  max-width: 900px;
+}
+/* navbar color 
+#f8f9fa */

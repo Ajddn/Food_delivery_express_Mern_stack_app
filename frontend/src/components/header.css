@@ -1,0 +1,106 @@
+p{
+    font-size: 35px;
+    font-family: sans-serif;
+    
+    position: absolute;
+    left: 70px;
+}
+.logopng{
+    position: relative;
+    right: 52px;
+}
+.headingoflogo{
+  position: relative;
+  right: 900px;
+  font-family: serif;
+  font-weight: bolder;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+.shiftingelement{
+  position: relative;
+  right: 100px;
+  display: inline-block;
+}
+.homeset{
+  padding-right: 10px;
+  position: relative;
+  right: 160px;
+}
+.menuset{
+  position: relative;
+  right: 140px;
+}
+.aboutset{
+    margin-left: 10px;
+    position: relative;
+    top: 1px;
+    right: 138px;
+}
+.contactset{
+  position: absolute;
+  right: 35px;
+  top: 3px;
+}
+.user{
+    position:absolute ;
+    top: 28px;
+    right: 30px;
+    cursor: pointer;
+}
+.cart{
+  position:absolute ;
+  right: 85px;
+  bottom: 28px;
+}
+.zero{
+  border-radius: 100px;
+  position: relative;
+  right: 79px;
+  bottom: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+.dropdown{
+  position: absolute;
+  top: 80px;
+  left: 1170px;
+  z-index: 2;
+  
+}
+.dropdownelementone{
+  font-family: sans-serif;
+  font-weight: bold;
+  display: inline;
+  font-size: medium;
+  position: absolute;
+  left: 250px;
+  white-space: nowrap;
+  cursor: pointer;
+  
+}
+.dropdownelementtwo{
+  
+  font-family: sans-serif;
+  font-weight: bold;  
+  font-size: medium;
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  cursor: pointer;
+} 
+/* #f8f9fa; */
+ .logoutbutton{
+  background-color: black;
+} 
+
+
+
+
+
+

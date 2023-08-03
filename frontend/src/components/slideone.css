@@ -1,0 +1,64 @@
+.imageset{ 
+    width: 170px;
+    height: 170px;
+    border-radius: 15px;
+    position: relative;
+    left: 80px;
+}
+.imageslideone{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+.nameheading{
+    text-align: center;
+      position: relative;
+      top: 25px;
+     left: 80px;
+     white-space: nowrap;
+    }
+ .priceheading{
+      text-align: center;
+      position: relative;
+      top: 25px;
+      left: 70px;
+}
+.mainsildeone{
+    
+padding-right: 100px;
+}
+.slideonebtn {
+    background: #DDE6ED;
+    background-image: -webkit-linear-gradient(top, #DDE6ED, #DDE6ED);
+    background-image: -moz-linear-gradient(top, #DDE6ED, #DDE6ED);
+    background-image: -ms-linear-gradient(top, #DDE6ED, #DDE6ED);
+    background-image: -o-linear-gradient(top, #DDE6ED, #DDE6ED);
+    background-image: linear-gradient(to bottom, #DDE6ED, #DDE6ED);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Georgia;
+    color: black;
+    font-size: 21px;
+    padding: 6px 6px 6px 6px;
+    text-decoration: none;
+  }
+  
+  .slideonebtn:hover {
+    background: #9DB2BF;
+    background-image: -webkit-linear-gradient(top, #9DB2BF, #9DB2BF);
+    background-image: -moz-linear-gradient(top, #9DB2BF, #9DB2BF);
+    background-image: -ms-linear-gradient(top, #9DB2BF, #9DB2BF);
+    background-image: -o-linear-gradient(top, #9DB2BF, #9DB2BF);
+    background-image: linear-gradient(to bottom, #9DB2BF, #9DB2BF);
+    text-decoration: none;
+  }
+ .placingbtn{
+ position: relative;
+ top:20px;
+ left: 105px;
+  }
+  /* Import the simplebar CSS */
+

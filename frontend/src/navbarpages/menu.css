@@ -1,0 +1,88 @@
+
+.menuimageset{
+    height: 390px;
+    width: 370px;
+    position: relative;
+    top: 150px;
+    left: 380px;
+}
+.imagemenuset{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+.imagemenuset:hover {
+    transform: scale(1.05); /* Scale up the element to 105% on hover */
+  }
+.slideonebtn {
+    background: #DDE6ED;
+    background-image: -webkit-linear-gradient(top, #DDE6ED, #DDE6ED);
+    background-image: -moz-linear-gradient(top, #DDE6ED, #DDE6ED);
+    background-image: -ms-linear-gradient(top, #DDE6ED, #DDE6ED);
+    background-image: -o-linear-gradient(top, #DDE6ED, #DDE6ED);
+    background-image: linear-gradient(to bottom, #DDE6ED, #DDE6ED);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Georgia;
+    color: black;
+    font-size: 21px;
+    padding: 6px 12px 6px 12px;
+    text-decoration: none;
+  }
+  
+  .slideonebtn:hover {
+    background: #9DB2BF;
+    background-image: -webkit-linear-gradient(top, #9DB2BF, #9DB2BF);
+    background-image: -moz-linear-gradient(top, #9DB2BF, #9DB2BF);
+    background-image: -ms-linear-gradient(top, #9DB2BF, #9DB2BF);
+    background-image: -o-linear-gradient(top, #9DB2BF, #9DB2BF);
+    background-image: linear-gradient(to bottom, #9DB2BF, #9DB2BF);
+    text-decoration: none;
+  }
+ .rightside{
+    position: relative;
+    bottom: 260px;
+    left: 750px;
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    white-space: wrap;
+    
+  }
+  .buynowbtn{
+   position:absolute;
+   left: 90px;
+   top: 35px;
+   padding-left: 10px;
+   padding-right: 20px;
+   margin-right: 30px;
+   
+  }
+  .addtocartbtn{
+    position: relative;
+    top: 35px;
+    
+  }
+  .descrset{
+    padding-top: 20px;
+    width: 420;
+    height: fit-content;
+    white-space: wrap;
+   font-size: medium;
+   line-height: 1.7;
+   position: relative;
+   top: 50px;
+   left: 120px;
+   text-align: left;
+   
+
+  }
+ 
+  

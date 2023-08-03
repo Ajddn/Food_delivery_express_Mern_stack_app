@@ -1,0 +1,108 @@
+.imageback{
+ height: 516px;
+width: 1360px; 
+border-radius: 5%;
+position: absolute;
+left: 2px;
+  filter: blur(3px);
+ -webkit-filter: blur(3px); 
+ } 
+ 
+.image-container{
+  
+  position: absolute;
+  top: 100px;
+}
+
+
+/* above is image code */
+
+.headingadd{
+  position: relative;
+  left: 580px;
+  padding-top: 25px;
+}
+.labelone{
+position: relative;
+top: 50px;
+left: 173px;
+}
+.enterdish{
+position: relative;
+top: 110px;
+left: 40px;
+}
+.labeltwo{
+position: relative;
+top: 200px;
+right: 295px;
+}
+.selectcat{
+  position: relative;
+  top: 205px;
+  right: 250px;
+}
+.pricelabel{
+  position: absolute;
+  top: 365px;
+  right: 530px;
+}
+.priceinput{
+  position: absolute;
+  top: 400px;
+  right: 230px;
+}
+.imagelabel{
+  position: absolute;
+  top: 135px;
+  cursor: pointer;
+}
+.insideimg{ 
+  background-color: grey;
+  position: absolute;
+  padding-top : 60px;
+  padding-bottom : 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  cursor: pointer;
+}
+.hidden{
+  display: none;
+}
+.uploadedimg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Set the width to 100% to fill the parent div */
+  height: 100%; /* Set the height to 100% to fill the parent div */
+  object-fit: cover;
+  
+}
+.labeldesc{
+  position: absolute;
+  top: 350px;
+}
+.desc{
+  position: absolute;
+  top: 390px;
+}
+textarea{
+  resize: none;
+}
+.buttonone{
+  position: absolute;
+  top: 470px;
+  left: 1190px;
+}
+.buttontwo{
+  position: absolute;
+  top: 468px;
+  left: 1280px;
+}
+
+/* a{
+  color: white;
+} */
+.insideimg input[type="file"] {
+  display: none;
+}

@@ -1,0 +1,81 @@
+
+.headongofcart{
+    position: absolute;
+    top: 120px;
+    left: 570px;
+    font-size:6dvh;
+    font-family: serif;
+    font-weight: bolder;
+}
+.summary{
+    background-color:#DDE6ED;
+    position: absolute;
+    left: 1100px;
+    top: 250px;
+    width: 330px;
+    height: 50px;
+    text-align: center;
+    padding-top: 13px;
+    font-family: serif;
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+}
+.quantitytotal{
+position: absolute;
+left: 1120px;
+top: 350px;
+font-size: larger;
+font-weight: bold;
+}
+.pricetotal{
+    position: absolute;
+    left: 1120px;
+    top: 400px;
+    font-size: larger;
+    font-weight: bold;
+  
+}
+.Payment{
+   
+    position: absolute;
+    left: 1100px;
+    top: 450px;
+    width: 330px;
+    height: 50px;
+    text-align: center;
+    padding-top: 13px;
+    font-family: serif;
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+}
+.paymentbutton{
+    width: 330px;
+    height: 50px;
+    background-color:#FF8787;
+    border: 0;
+    
+}
+  .empty-cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Adjust this value as needed */
+    margin: 0 auto; /* Centers the container horizontally */
+  }
+  
+  .emptycartimg {
+    max-width: 100%;
+    height: auto;
+    
+  }
+.emptyclass{
+    position: absolute;
+    left: 570px;
+    top: 610px;
+    text-align: center;
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 7dvh;
+}

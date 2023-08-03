@@ -1,0 +1,26 @@
+
+.imageset{ 
+    width: 170px;
+    height: 170px;
+    border-radius: 15px;
+    position: relative;
+    left: 180px;
+}
+.imagefetch{
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+.nameheading{
+text-align: center;
+  position: relative;
+  top: 25px;
+ left: 100px;
+}
+.priceheading{
+  text-align: center;
+  position: relative;
+  top: 25px;
+ left: 100px;
+}

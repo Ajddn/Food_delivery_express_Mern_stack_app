@@ -1,0 +1,29 @@
+.knifeandfork{
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: darkgray;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+.settingname{
+    cursor: pointer;
+    font-size : large;
+    font-weight: bold;
+    position: relative;
+    top: 130px;
+    left: -95px;
+    text-align: center;
+   
+}
+
+.knifeandfork.active {
+    background-color: grey;
+  }
+
+
+
+  
+  
+  
