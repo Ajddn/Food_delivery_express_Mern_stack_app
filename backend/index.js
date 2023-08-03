@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const Stripe = require('stripe');
 const app = express();
+const path = require('path');
 
 
 
@@ -14,7 +15,10 @@ app.use(express.json({ limit: "10mb" , extended: true }));
 // Serve static files from the "public" directory
 app.use(express.static('public'));
 
-
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+app.get("*" , (req ,res ) => {
+  app.use(express.static(path.join(__dirname, "../frontend/build/index.html")));
+});
 
 const PORT = process.env.PORT || 8080;
 
