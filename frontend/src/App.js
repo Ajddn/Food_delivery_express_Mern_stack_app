@@ -17,23 +17,24 @@ function App() {
   //     dispatch(setDataProduct(resData));
   //   })();
   // }, [dispatch]);
-  useEffect(() => {
-    (async () => {
-      try {
-        const res = await fetch(
-          `${process.env.REACT_APP_SERVER_DOMAIN}/product`
-        );
-        if (!res.ok) {
-          throw new Error("Network response was not ok.");
-        }
-        const resData = await res.json();
-        console.log(resData); // Log the parsed JSON data
-        dispatch(setDataProduct(resData));
-      } catch (error) {
-        console.error("Error fetching data:", error);
+useEffect(() => {
+  (async () => {
+    try {
+      const res = await fetch(
+        `${process.env.REACT_APP_SERVER_DOMAIN}/product`
+      );
+      if (!res.ok) {
+        throw new Error("Network response was not ok.");
       }
-    })();
-  }, [dispatch]);
+      const resData = await res.json();
+      console.log(resData); // Log the parsed JSON data
+      dispatch(setDataProduct(resData));
+    } catch (error) {
+      console.error("Error fetching data:", error.message); // Log the specific error message
+    }
+  })();
+}, [dispatch]);
+
 
   console.log(productData);
   return (
