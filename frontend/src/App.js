@@ -20,8 +20,13 @@ function App() {
 useEffect(() => {
     (async () => {
       try {
-        const res = await fetch(
-          `${process.env.REACT_APP_SERVER_DOMAIN}/product`
+       const res = await fetch(
+          `${process.env.REACT_APP_SERVER_DOMAIN}/product`,
+          {
+            method: 'GET',
+            credentials: 'include',
+            mode: 'cors', // Add this line
+          }
         );
         if (!res.ok) {
           throw new Error("Network response was not ok.");
