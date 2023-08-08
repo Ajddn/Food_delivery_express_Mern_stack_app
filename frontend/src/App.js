@@ -18,17 +18,23 @@ function App() {
   //   })();
   // }, [dispatch]);
 useEffect(() => {
-    const apiUrl = 'https://food-delivery-express-mern-stack-app-git-main-ajddn.vercel.app/product';
-
-    fetch(apiUrl)
-      .then(response => response.json())
-      .then(data => {
-        dispatch(setDataProduct(data)); // Dispatch data to Redux store
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-      });
+    (async () => {
+      try {
+        const res = await fetch(
+          `${process.env.REACT_APP_SERVER_DOMAIN}/product`
+        );
+        if (!res.ok) {
+          throw new Error("Network response was not ok.");
+        }
+        const resData = await res.json();
+        console.log(resData); // Log the parsed JSON data
+        dispatch(setDataProduct(resData));
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    })();
   }, [dispatch]);
+
 
 
   console.log(productData);
