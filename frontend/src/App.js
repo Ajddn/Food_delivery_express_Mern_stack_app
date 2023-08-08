@@ -18,7 +18,7 @@ function App() {
   //   })();
   // }, [dispatch]);
 useEffect(() => {
-  const apiUrl = 'https://food-delivery-express-mern-stack-app-git-main-ajddn.vercel.app/product';
+   const apiUrl = process.env.REACT_APP_SERVER_DOMAIN + '/product';
 
   const fetchData = async () => {
     try {
