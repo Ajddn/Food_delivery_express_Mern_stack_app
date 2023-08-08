@@ -9,10 +9,14 @@ const app = express();
 
 
 
-
-
-// Use the cors middleware
-app.use(cors());
+// Use the cors middleware and allow requests from your frontend domain
+const allowedOrigins = [
+  "https://food-delivery-express-mern-stack-app-git-main-ajddn.vercel.app",
+  // Add more allowed origins if needed
+];
+app.use(cors({
+  origin: allowedOrigins,
+}));
 
 
 
