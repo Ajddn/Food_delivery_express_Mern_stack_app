@@ -19,7 +19,7 @@ function App() {
   // }, [dispatch]);
 useEffect(() => {
    const apiUrl = process.env.REACT_APP_SERVER_DOMAIN + '/product';
-
+ console.log('API URL:', apiUrl); 
   const fetchData = async () => {
     try {
       const response = await fetch(apiUrl);
