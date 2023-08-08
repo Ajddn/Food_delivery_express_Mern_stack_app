@@ -8,16 +8,7 @@ const app = express();
 
 
 
-// allowing request from frontend domain
-const frontendUrl = process.env.FRONTEND_URL;
-
-app.use(cors({
-  origin: frontendUrl,
-  credentials: true,
-}));
-
-// Add this line to handle CORS preflight requests for all routes
-app.options('*', cors());
+app.use(cors());
 
 
 
