@@ -8,8 +8,17 @@ const app = express();
 
 
 
+// allowing request from frontend domain
+const frontendUrl = process.env.FRONTEND_URL;
 
-app.use(cors());
+app.use(cors({
+  origin: frontendUrl,
+  credentials: true,
+}));
+
+
+
+
 app.use(express.json({ limit: "10mb" , extended: true }));
 
 // Serve static files from the "public" directory
