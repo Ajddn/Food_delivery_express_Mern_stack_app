@@ -82,7 +82,7 @@ position :relative; top : 270px;
 }
 
 
-.btn {
+.btnforsubmit {
     background: darkgray;
     /* background-image: -webkit-linear-gradient(top, #A1CCD1, #A1CCD1);
     background-image: -moz-linear-gradient(top, #A1CCD1, #A1CCD1);
@@ -100,7 +100,7 @@ position :relative; top : 270px;
    
   }
   
-  .btn:hover {
+  .btnforsubmit:hover {
     background: gray;
     /* background-image: -webkit-linear-gradient(top, #7ebbc2, #7ebbc2);
     background-image: -moz-linear-gradient(top, #7ebbc2, #7ebbc2);
