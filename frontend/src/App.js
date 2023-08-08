@@ -18,22 +18,22 @@ function App() {
   //   })();
   // }, [dispatch]);
 useEffect(() => {
-  (async () => {
-    try {
-      const res = await fetch(
-        `${process.env.REACT_APP_SERVER_DOMAIN}/product`
-      );
-      if (!res.ok) {
-        throw new Error("Network response was not ok.");
+    (async () => {
+      try {
+        const res = await fetch(
+          `${process.env.REACT_APP_SERVER_DOMAIN}/product`
+        );
+        if (!res.ok) {
+          throw new Error("Network response was not ok.");
+        }
+        const resData = await res.json();
+        console.log(resData); // Log the parsed JSON data
+        dispatch(setDataProduct(resData));
+      } catch (error) {
+        console.error("Error fetching data:", error);
       }
-      const resData = await res.json();
-      console.log(resData); // Log the parsed JSON data
-      dispatch(setDataProduct(resData));
-    } catch (error) {
-      console.error("Error fetching data:", error.message); // Log the specific error message
-    }
-  })();
-}, [dispatch]);
+    })();
+  }, [dispatch]);
 
 
   console.log(productData);
