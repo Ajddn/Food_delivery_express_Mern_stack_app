@@ -12,11 +12,7 @@ const app = express();
 // Option 1: Allow all origins
 app.use(cors());
 
-// Option 2: Allow a specific origin
-const corsOptions = {
-  origin: "https://food-delivery-express-mern-stack-app-git-main-ajddn.vercel.app"
-};
-app.use(cors(corsOptions));
+
 
 
 app.use(express.json({ limit: "10mb" , extended: true }));
