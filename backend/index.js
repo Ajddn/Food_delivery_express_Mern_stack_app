@@ -151,16 +151,12 @@ app.post("/uploadproduct", async (req, res) => {
 app.get("/product", async (req, res) => {
   try {
     const data = await productmodel.find({});
-    console.log("Data fetched:", data); // Log the data
     res.send(JSON.stringify(data));
   } catch (error) {
     console.error("Error fetching data:", error);
     res.status(500).json({ error: "Failed to fetch product data" });
   }
 });
-
-
-
 
 
  
