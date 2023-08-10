@@ -13,7 +13,7 @@ function App() {
     (async () => {
       try {
         const res = await fetch(
-          `${process.env.REACT_APP_SERVER_DOMAIN}/product`
+          `${process.env.REACT_APP_SERVER_DOMAIN}product`
         );
         if (!res.ok) {
           throw new Error("Network response was not ok.");
