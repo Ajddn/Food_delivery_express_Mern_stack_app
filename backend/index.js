@@ -15,7 +15,7 @@ app.use(cors());
 
 
 
-app.use(express.json({ limit: "10mb" , extended: true }));
+app.use(express.json({ limit: "5mb" , extended: true }));
 
 // Serve static files from the "public" directory
 app.use(express.static('public'));
@@ -25,7 +25,7 @@ app.use(express.static('public'));
 const PORT = process.env.PORT || 8080;
 
 // body parser 
-app.use(bodyParser.json({ limit: "10mb", extended: true }));
+app.use(bodyParser.json({ limit: "5mb", extended: true }));
 
 
 
