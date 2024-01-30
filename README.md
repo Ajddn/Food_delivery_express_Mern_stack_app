@@ -19,7 +19,7 @@ backend  ------------------------>
 
 4.  Now cd in frontend and run "npm start"
 5.  In backend run "nodemon index.js"
-6.  isit --> localhost:3000 .
+6.  Visit --> localhost:3000 .
 
 
 frontend deployed in "vercel.com"
