@@ -1,3 +1,30 @@
+how to run project  - >
+ 
+
+1. CLONE THE PROJECT . 
+2. CD IN FRONTEND AND BACKEND ONE AFTER ANOTHER AND THEN RUN THE COMMAND (npm start).
+3. set env file in both frontend and backend   
+
+frontend  ---------------->                                                                
+
+      REACT_APP_SERVER_DOMAIN = http://localhost:8080
+      REACT_APP_ADMIN_EMAIL = joshiakshat133@gmail.com
+      REACT_APP_STRIPE_PUBLIC_KEY = ""                                 
+                         
+
+backend  ------------------------>  
+       MONGODB_URL = ""
+       STRIPE_SECRET_KEY = ""
+       FRONTEND_URL = "http://localhost:3000"
+
+4.  Now cd in frontend and run "npm start"
+5.  In backend run "nodemon index.js"
+6.  isit --> localhost:3000 .
+
+
+frontend deployed in "vercel.com"
+backend in "render.com"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
