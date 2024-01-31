@@ -116,7 +116,7 @@ const Home = () => {
             })
           : (
             loadingArray.map((el, index) => (
-              <HomeCard key={index + "loading"} loading={"Loading..."} />
+              <HomeCard key={index + "loading"} loading={"DATA IS FETCHING MIGHT TAKE SOMETIME....."} />
             ))
           )}
       </div>
@@ -158,7 +158,7 @@ const Home = () => {
                 );
               })
             : loadingArrayFeature.map((el, index) => (
-                <SlideOne loading="Loading..." key={index + "cartLoading"} />
+                <SlideOne loading="DATA IS FETCHING MIGHT TAKE SOMETIME....." key={index + "cartLoading"} />
               ))}
           {/* </div> */}
         </div>

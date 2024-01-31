@@ -17,24 +17,53 @@ function App() {
   //     dispatch(setDataProduct(resData));
   //   })();
   // }, [dispatch]);
-useEffect(() => {
-  (async () => {
-    try {
-      const res = await fetch(
-        `${process.env.REACT_APP_SERVER_DOMAIN}/product`
-      );
-      if (!res.ok) {
-        throw new Error("Network response was not ok.");
-      }
-      const resData = await res.json();
-      console.log(resData); // Log the parsed JSON data
-      dispatch(setDataProduct(resData));
-    } catch (error) {
-      console.error("Error fetching data:", error.message); // Log the specific error message
-    }
-  })();
-}, [dispatch]);
 
+
+  // useEffect(() => {
+  //   (async () => {
+  //     try {
+  //       const res = await fetch(
+  //         `${process.env.REACT_APP_SERVER_DOMAIN}/product`
+  //       );
+  //       if (!res.ok) {
+  //         throw new Error("Network response was not ok.");
+  //       }
+  //       const resData = await res.json();
+  //       console.log(resData); // Log the parsed JSON data
+  //       dispatch(setDataProduct(resData));
+  //     } catch (error) {
+  //       console.error("Error fetching data:", error);
+  //     }
+  //   })();
+  // }, [dispatch]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch(`${process.env.REACT_APP_SERVER_DOMAIN}/product`);
+        if (!res.ok) {
+          throw new Error("Network response was not ok.");
+        }
+        const resData = await res.json();
+
+        // Preload image into the cache
+        resData.forEach((product) => {
+          const imageUrl = `${process.env.REACT_APP_SERVER_DOMAIN}/product`;
+          const img = new Image();
+          img.src = imageUrl;
+          img.onload = () => {
+            // Handle the image load (if needed)
+          };
+        });
+
+        dispatch(setDataProduct(resData));
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, [dispatch]);
 
   console.log(productData);
   return (

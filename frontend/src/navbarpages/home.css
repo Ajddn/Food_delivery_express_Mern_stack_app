@@ -143,12 +143,14 @@ top: 50px;
  position: relative;
  border: 0;
  border-radius: 5px;
+ background-color: darkgray;
 }
 .right{
   position: relative;
   left: 15px;
   border: 0;
   border-radius: 5px;
+  background-color: darkgray;
 }
 .lastHeading{
   position: relative;

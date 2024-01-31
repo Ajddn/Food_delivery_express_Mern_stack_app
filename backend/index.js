@@ -9,8 +9,13 @@ const app = express();
 
 
 
+// Option 1: Allow all origins
 app.use(cors());
-app.use(express.json({ limit: "10mb" , extended: true }));
+
+
+
+
+app.use(express.json({ limit: "5mb" , extended: true }));
 
 // Serve static files from the "public" directory
 app.use(express.static('public'));
@@ -20,7 +25,7 @@ app.use(express.static('public'));
 const PORT = process.env.PORT || 8080;
 
 // body parser 
-app.use(bodyParser.json({ limit: "10mb", extended: true }));
+app.use(bodyParser.json({ limit: "5mb", extended: true }));
 
 
 
@@ -154,8 +159,6 @@ app.get("/product", async (req, res) => {
 });
 
 
-
-
  
 // payment gateway
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY ,{
@@ -212,27 +215,6 @@ app.listen(PORT, () => console.log("server is running on port : " + PORT));
 
 
 
-// // This is your test secret API key.
-// const stripe = require('stripe')('sk_test_51NYtiuSG1VYaJyiMQ59klAqBtpQdgZNV6X2UgN5cnftwXkPdW9hFpLLTiOiHoGJKhGqq7ZFXu52RrG1iVrvOVq4H00xe7KqWRY');
-// const express = require('express');
-// const app = express();
-// app.use(express.static('public'));
-
-// const YOUR_DOMAIN = 'http://localhost:4242';
-
-// app.post('/create-checkout-session', async (req, res) => {
-//   const session = await stripe.checkout.sessions.create({
-//     line_items: [
-//       {
-//         // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
-//         price: '{{PRICE_ID}}',
-//         quantity: 1,
-//       },
-//     ],
-//     mode: 'payment',
-//     success_url: `${YOUR_DOMAIN}/success.html`,
-//     cancel_url: `${YOUR_DOMAIN}/cancel.html`,
-//   });
 
 //   res.redirect(303, session.url);
 // });
